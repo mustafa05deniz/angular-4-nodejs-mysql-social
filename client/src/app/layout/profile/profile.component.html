@@ -1,0 +1,23 @@
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- kodizim1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2698789182225075"
+     data-ad-slot="7046582017"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<div *ngIf="!logged">
+   please  
+   <a [routerLink]="['/layout/login']">login</a>
+</div>
+
+
+
+<div *ngIf="logged">
+        <h3>profile component</h3>
+        <h4>username : {{users.username}}<br>
+        password : {{users.password}}<br>
+        role : {{users.role}}<br></h4>
+        <button  class="btn btn-danger" (click)="logout()">log out </button></div>
